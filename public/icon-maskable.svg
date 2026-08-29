@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGradMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#8B1E3F" />
+      <stop offset="45%" stopColor="#722F37" />
+      <stop offset="100%" stopColor="#4A0E17" />
+    </linearGradient>
+    <linearGradient id="goldGradMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#FDE68A" />
+      <stop offset="50%" stopColor="#D4AF37" />
+      <stop offset="100%" stopColor="#AA7C11" />
+    </linearGradient>
+    <linearGradient id="wingGradLeftMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#F5E6E8" />
+      <stop offset="50%" stopColor="#FFFFFF" />
+      <stop offset="100%" stopColor="#EAD2D7" />
+    </linearGradient>
+    <linearGradient id="wingGradRightMask" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#FDF2F4" />
+      <stop offset="50%" stopColor="#FFFFFF" />
+      <stop offset="100%" stopColor="#E5C7CE" />
+    </linearGradient>
+    <filter id="shadowMask" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Full bleed background for maskable icon -->
+  <rect width="512" height="512" fill="url(#bgGradMask)" />
+
+  <!-- Center group scaled inside safe zone (80% / 410px inner box) -->
+  <g transform="translate(96, 80) scale(3.2)" filter="url(#shadowMask)">
+    <!-- Left Upper Wing -->
+    <path 
+      d="M 50 48 C 42 30, 20 18, 12 30 C 5 40, 10 58, 25 64 C 38 68, 48 55, 50 48 Z" 
+      fill="url(#wingGradLeftMask)" 
+      opacity="0.98"
+    />
+    <!-- Left Lower Wing -->
+    <path 
+      d="M 49 53 C 40 58, 22 62, 20 74 C 18 84, 32 90, 42 80 C 47 74, 49 60, 49 53 Z" 
+      fill="url(#wingGradLeftMask)" 
+      opacity="0.92"
+    />
+    
+    <!-- Right Upper Wing -->
+    <path 
+      d="M 50 48 C 58 30, 80 18, 88 30 C 95 40, 90 58, 75 64 C 62 68, 52 55, 50 48 Z" 
+      fill="url(#wingGradRightMask)" 
+      opacity="0.98"
+    />
+    <!-- Right Lower Wing -->
+    <path 
+      d="M 51 53 C 60 58, 78 62, 80 74 C 82 84, 68 90, 58 80 C 53 74, 51 60, 51 53 Z" 
+      fill="url(#wingGradRightMask)" 
+      opacity="0.92"
+    />
+
+    <!-- Decorative Wing Filigree / Gold Accents -->
+    <path 
+      d="M 32 40 C 25 36, 18 42, 22 50 C 28 48, 32 45, 32 40 Z" 
+      fill="url(#goldGradMask)" 
+      opacity="0.9"
+    />
+    <path 
+      d="M 68 40 C 75 36, 82 42, 78 50 C 72 48, 68 45, 68 40 Z" 
+      fill="url(#goldGradMask)" 
+      opacity="0.9"
+    />
+    <circle cx="30" cy="74" r="3" fill="url(#goldGradMask)" opacity="0.95" />
+    <circle cx="70" cy="74" r="3" fill="url(#goldGradMask)" opacity="0.95" />
+
+    <!-- Antennae with delicate curls -->
+    <path 
+      d="M 48 38 C 45 28, 38 20, 32 22 C 29 23, 30 27, 34 26" 
+      fill="none" 
+      stroke="url(#goldGradMask)" 
+      stroke-width="2.2" 
+      stroke-linecap="round"
+    />
+    <path 
+      d="M 52 38 C 55 28, 62 20, 68 22 C 71 23, 70 27, 66 26" 
+      fill="none" 
+      stroke="url(#goldGradMask)" 
+      stroke-width="2.2" 
+      stroke-linecap="round"
+    />
+    <circle cx="33" cy="24" r="1.5" fill="#FDE68A" />
+    <circle cx="67" cy="24" r="1.5" fill="#FDE68A" />
+
+    <!-- Slender Body -->
+    <ellipse cx="50" cy="56" rx="3" ry="16" fill="url(#goldGradMask)" />
+    <circle cx="50" cy="38" r="3.5" fill="#FFFFFF" stroke="#D4AF37" stroke-width="1.5" />
+  </g>
+</svg>

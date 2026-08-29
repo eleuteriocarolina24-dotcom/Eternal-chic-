@@ -1,0 +1,70 @@
+{
+  "name": "Eternal Chique - Gestão de Moda & Ateliê",
+  "short_name": "Eternal Chique",
+  "description": "Sistema completo de gestão de estoque, vendas, catálogo e agenda para Eternal Chique.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F8F9FA",
+  "theme_color": "#722F37",
+  "orientation": "any",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "categories": ["business", "productivity", "shopping"],
+  "icons": [
+    {
+      "src": "/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "48x48 72x72 96x96 128x128 256x256",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Novo Produto",
+      "short_name": "Cadastrar",
+      "description": "Cadastrar nova peça no estoque",
+      "url": "/?tab=product-form",
+      "icons": [{ "src": "/icon-192.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Leitor PDV",
+      "short_name": "PDV",
+      "description": "Leitor de código de barras e baixa de vendas",
+      "url": "/?tab=pos",
+      "icons": [{ "src": "/icon-192.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Catálogo",
+      "short_name": "Catálogo",
+      "description": "Vitrine de produtos e fotos",
+      "url": "/?tab=catalog",
+      "icons": [{ "src": "/icon-192.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Agenda & Calendário",
+      "short_name": "Agenda",
+      "description": "Compromissos e entregas",
+      "url": "/?tab=agenda",
+      "icons": [{ "src": "/icon-192.svg", "sizes": "192x192" }]
+    }
+  ]
+}
