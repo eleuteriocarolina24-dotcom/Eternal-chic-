@@ -81,7 +81,7 @@ export const PWAInstallModal: React.FC<PWAInstallModalProps> = ({
           </div>
 
           <h3 id="pwa-modal-title" className="font-serif-chic text-2xl font-bold text-white tracking-tight">
-            Eternal Chique App
+            Eternal Chic App
           </h3>
           <p className="text-xs text-stone-200 font-sans mt-1">
             Instale o aplicativo no seu Celular, Tablet ou Computador
@@ -136,7 +136,7 @@ export const PWAInstallModal: React.FC<PWAInstallModalProps> = ({
           {isStandalone ? (
             <div className="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-center">
               <p className="text-xs font-semibold text-emerald-800 flex items-center justify-center gap-1.5">
-                <Check className="w-4 h-4" /> Você já está usando o Eternal Chique como aplicativo PWA instalado!
+                <Check className="w-4 h-4" /> Você já está usando o Eternal Chic como aplicativo PWA instalado!
               </p>
             </div>
           ) : deferredPrompt ? (
@@ -176,7 +176,7 @@ export const PWAInstallModal: React.FC<PWAInstallModalProps> = ({
                 Como instalar no Chrome / Edge / Android:
               </h4>
               <p>
-                Clique no menu do navegador (ícone de 3 pontinhos no canto superior) e selecione <strong>"Instalar Eternal Chique"</strong> ou <strong>"Adicionar à tela inicial"</strong>.
+                Clique no menu do navegador (ícone de 3 pontinhos no canto superior) e selecione <strong>"Instalar Eternal Chic"</strong> ou <strong>"Adicionar à tela inicial"</strong>.
               </p>
             </div>
           )}

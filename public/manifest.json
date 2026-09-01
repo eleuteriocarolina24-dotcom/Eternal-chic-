@@ -1,17 +1,47 @@
 {
-  "name": "Eternal Chique - Gestão de Moda & Ateliê",
-  "short_name": "Eternal Chique",
-  "description": "Sistema completo de gestão de estoque, vendas, catálogo e agenda para Eternal Chique.",
-  "start_url": "/",
+  "id": "/?source=pwa",
+  "name": "Eternal Chic",
+  "short_name": "Eternal Chic",
+  "description": "Sistema completo de gestão de estoque, vendas, catálogo e agenda para Eternal Chic.",
+  "start_url": "/?source=pwa",
   "scope": "/",
   "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui"
+  ],
   "background_color": "#F8F9FA",
   "theme_color": "#722F37",
   "orientation": "any",
   "lang": "pt-BR",
   "dir": "ltr",
-  "categories": ["business", "productivity", "shopping"],
+  "categories": [
+    "business",
+    "productivity",
+    "shopping",
+    "finance"
+  ],
+  "prefer_related_applications": false,
   "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
     {
       "src": "/icon-192.svg",
       "sizes": "192x192",
@@ -31,6 +61,12 @@
       "purpose": "maskable"
     },
     {
+      "src": "/favicon.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
       "src": "/favicon.svg",
       "sizes": "48x48 72x72 96x96 128x128 256x256",
       "type": "image/svg+xml",
@@ -42,29 +78,29 @@
       "name": "Novo Produto",
       "short_name": "Cadastrar",
       "description": "Cadastrar nova peça no estoque",
-      "url": "/?tab=product-form",
-      "icons": [{ "src": "/icon-192.svg", "sizes": "192x192" }]
+      "url": "/?tab=product-form&source=pwa_shortcut",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" }]
     },
     {
       "name": "Leitor PDV",
       "short_name": "PDV",
       "description": "Leitor de código de barras e baixa de vendas",
-      "url": "/?tab=pos",
-      "icons": [{ "src": "/icon-192.svg", "sizes": "192x192" }]
+      "url": "/?tab=pos&source=pwa_shortcut",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" }]
     },
     {
       "name": "Catálogo",
       "short_name": "Catálogo",
       "description": "Vitrine de produtos e fotos",
-      "url": "/?tab=catalog",
-      "icons": [{ "src": "/icon-192.svg", "sizes": "192x192" }]
+      "url": "/?tab=catalog&source=pwa_shortcut",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" }]
     },
     {
       "name": "Agenda & Calendário",
       "short_name": "Agenda",
       "description": "Compromissos e entregas",
-      "url": "/?tab=agenda",
-      "icons": [{ "src": "/icon-192.svg", "sizes": "192x192" }]
+      "url": "/?tab=agenda&source=pwa_shortcut",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" }]
     }
   ]
 }

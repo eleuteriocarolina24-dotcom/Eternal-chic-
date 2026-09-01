@@ -136,7 +136,7 @@ export const AgendaCalendar: React.FC<AgendaCalendarProps> = ({
       case 'cliente':
         return { label: 'Atendimento VIP', icon: UserCheck, color: 'bg-blue-100 text-blue-800' };
       default:
-        return { label: 'Eternal Chique', icon: Tag, color: 'bg-stone-100 text-stone-800' };
+        return { label: 'Eternal Chic', icon: Tag, color: 'bg-stone-100 text-stone-800' };
     }
   };
 
@@ -150,7 +150,7 @@ export const AgendaCalendar: React.FC<AgendaCalendarProps> = ({
               <CalendarIcon className="w-5 h-5" />
             </span>
             <h2 className="text-2xl font-serif-chic font-bold text-gray-900">
-              Agenda & Calendário Eternal Chique
+              Agenda & Calendário Eternal Chic
             </h2>
           </div>
           <p className="text-xs sm:text-sm text-gray-500 mt-1">

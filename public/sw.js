@@ -1,9 +1,14 @@
-const CACHE_NAME = 'eternal-chique-v1';
+const CACHE_NAME = 'eternal-chic-v1';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
   '/manifest.json',
   '/favicon.svg',
+  '/favicon.png',
+  '/icon-192.png',
+  '/icon-512.png',
+  '/icon-maskable.png',
+  '/apple-touch-icon.png',
   '/icon-192.svg',
   '/icon-512.svg',
   '/icon-maskable.svg'
@@ -39,7 +44,7 @@ self.addEventListener('fetch', (event) => {
   const { request } = event;
   const url = new URL(request.url);
 
-  // Skip non-GET requests and chrome-extension / non-http schemes
+  // Skip non-GET requests and non-http schemes
   if (request.method !== 'GET' || !url.protocol.startsWith('http')) {
     return;
   }
@@ -60,8 +65,8 @@ self.addEventListener('fetch', (event) => {
           if (cachedResponse) return cachedResponse;
           const indexFallback = await caches.match('/index.html');
           if (indexFallback) return indexFallback;
-          return new Response('Offline - Eternal Chique', {
-            headers: { 'Content-Type': 'text/html' }
+          return new Response('Offline - Eternal Chic', {
+            headers: { 'Content-Type': 'text/html; charset=utf-8' }
           });
         })
     );
@@ -80,7 +85,6 @@ self.addEventListener('fetch', (event) => {
           return networkResponse;
         })
         .catch(() => {
-          // Ignore network errors for background revalidation
           return null;
         });
 

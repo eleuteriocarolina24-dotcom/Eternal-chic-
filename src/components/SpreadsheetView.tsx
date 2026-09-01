@@ -15,6 +15,7 @@ import {
   Package
 } from 'lucide-react';
 import { Product } from '../types';
+import { DEFAULT_PHOTO_PLACEHOLDER } from '../utils/imageOptimizer';
 
 interface SpreadsheetViewProps {
   products: Product[];
@@ -174,7 +175,7 @@ export const SpreadsheetView: React.FC<SpreadsheetViewProps> = ({
             </h2>
           </div>
           <p className="text-xs sm:text-sm text-gray-500 mt-1">
-            Visualização completa e tabulada com custo, valor de venda, lucro unitário e total investido da Eternal Chique.
+            Visualização completa e tabulada com custo, valor de venda, lucro unitário e total investido da Eternal Chic.
           </p>
         </div>
 
@@ -344,6 +345,9 @@ export const SpreadsheetView: React.FC<SpreadsheetViewProps> = ({
                         <img 
                           src={product.photo} 
                           alt={product.name} 
+                          onError={(e) => {
+                            e.currentTarget.src = DEFAULT_PHOTO_PLACEHOLDER;
+                          }}
                           className="w-10 h-10 rounded-md object-cover mx-auto border border-gray-200"
                         />
                       </td>
@@ -482,7 +486,7 @@ export const SpreadsheetView: React.FC<SpreadsheetViewProps> = ({
             <tfoot className="bg-[#F5E6E8]/70 font-bold text-gray-900 border-t-2 border-[#722F37]/30 text-xs">
               <tr>
                 <td colSpan={4} className="py-3 px-3 text-right uppercase tracking-wider text-[#722F37]">
-                  TOTAIS GERAIS ETERNAL CHIQUE:
+                  TOTAIS GERAIS ETERNAL CHIC:
                 </td>
                 <td className="py-3 px-3 text-center text-sm font-bold text-gray-900">
                   {totalPieces} un

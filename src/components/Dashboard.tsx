@@ -108,7 +108,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
               <Sparkles className="w-4 h-4" />
             </span>
             <span className="text-xs font-semibold uppercase tracking-wider text-gray-500 font-sans">
-              Eternal Chique • Gestão de Moda
+              Eternal Chic • Gestão de Moda
             </span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold font-serif-chic text-gray-900 tracking-tight">

@@ -258,7 +258,7 @@ export const PricingCalculator: React.FC<PricingCalculatorProps> = ({
                 {formatCurrency(finalCalculatedPrice)}
               </span>
               <span className="text-[11px] text-stone-300 block">
-                Preço ideal de venda na Eternal Chique
+                Preço ideal de venda na Eternal Chic
               </span>
             </div>
 
@@ -313,7 +313,7 @@ export const PricingCalculator: React.FC<PricingCalculatorProps> = ({
               <div className="flex items-center justify-between p-2.5 rounded-lg bg-[#F5E6E8]/60 border border-[#722F37]/20">
                 <div>
                   <span className="font-semibold text-[#722F37] block">Preço de Tabela (Normal)</span>
-                  <span className="text-[10px] text-gray-500">Lucro pleno na Eternal Chique</span>
+                  <span className="text-[10px] text-gray-500">Lucro pleno na Eternal Chic</span>
                 </div>
                 <span className="font-serif-chic font-bold text-sm text-[#722F37]">
                   {formatCurrency(finalCalculatedPrice)}

@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { Product, SaleRecord } from '../types';
+import { DEFAULT_PHOTO_PLACEHOLDER } from '../utils/imageOptimizer';
 
 interface BarcodeScannerPOSProps {
   products: Product[];
@@ -172,7 +173,7 @@ export const BarcodeScannerPOS: React.FC<BarcodeScannerPOSProps> = ({
             </h2>
           </div>
           <p className="text-xs sm:text-sm text-gray-500 mt-1">
-            Digite o código ou use o leitor de código de barras para localizar a roupa e dar a baixa imediata no estoque da Eternal Chique.
+            Digite o código ou use o leitor de código de barras para localizar a roupa e dar a baixa imediata no estoque da Eternal Chic.
           </p>
         </div>
 
@@ -318,6 +319,9 @@ export const BarcodeScannerPOS: React.FC<BarcodeScannerPOSProps> = ({
                 <img
                   src={selectedProduct.photo}
                   alt={selectedProduct.name}
+                  onError={(e) => {
+                    e.currentTarget.src = DEFAULT_PHOTO_PLACEHOLDER;
+                  }}
                   className="w-16 h-20 rounded-md object-cover border border-gray-300 shrink-0"
                 />
                 <div className="space-y-1 flex-1">

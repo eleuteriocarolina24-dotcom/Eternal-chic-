@@ -6,7 +6,7 @@ export function registerServiceWorker() {
       navigator.serviceWorker
         .register('/sw.js')
         .then((registration) => {
-          console.log('Eternal Chique PWA ServiceWorker registered with scope:', registration.scope);
+          console.log('Eternal Chic PWA ServiceWorker registered with scope:', registration.scope);
           
           // Check for updates
           registration.onupdatefound = () => {

@@ -84,7 +84,7 @@ export default function App() {
     const handleAppInstalled = () => {
       setDeferredPrompt(null);
       setIsStandalone(true);
-      console.log('Eternal Chique PWA was installed successfully');
+      console.log('Eternal Chic PWA was installed successfully');
     };
 
     const handleOnline = () => setIsOnline(true);
@@ -299,7 +299,7 @@ export default function App() {
                 <ButterflyLogo size="sm" variant="wine" />
               </div>
               <span className="font-serif-chic font-bold text-lg text-[#722F37] tracking-tight">
-                Eternal Chique
+                Eternal Chic
               </span>
             </div>
           </div>
@@ -412,7 +412,7 @@ export default function App() {
         {/* Footer */}
         <footer className="bg-white border-t border-gray-200 py-4 px-6 mt-auto text-xs text-gray-500 flex flex-col sm:flex-row items-center justify-between gap-2 no-print">
            <div className="flex items-center gap-2">
-            <span className="font-serif-chic font-bold text-[#722F37]">Eternal Chique</span>
+            <span className="font-serif-chic font-bold text-[#722F37]">Eternal Chic</span>
             <span>•</span>
             <span>Sistema de Gestão Profissional</span>
           </div>

@@ -14,6 +14,7 @@ import {
   ArrowUpDown
 } from 'lucide-react';
 import { Product } from '../types';
+import { DEFAULT_PHOTO_PLACEHOLDER } from '../utils/imageOptimizer';
 
 interface CatalogProps {
   products: Product[];
@@ -66,7 +67,7 @@ export const Catalog: React.FC<CatalogProps> = ({
   };
 
   const handleShareWhatsApp = (product: Product) => {
-    const text = `🌸 *Eternal Chique* 🌸\n\n✨ *${product.name}*\n🏷️ *Código:* ${product.code}\n${product.size ? `📏 *Tamanho:* ${product.size}\n` : ''}${product.color ? `🎨 *Cor:* ${product.color}\n` : ''}💰 *Valor:* ${formatCurrency(product.sellingPrice)}\n\n_Entre em contato para garantir a sua peça exclusiva!_`;
+    const text = `🌸 *Eternal Chic* 🌸\n\n✨ *${product.name}*\n🏷️ *Código:* ${product.code}\n${product.size ? `📏 *Tamanho:* ${product.size}\n` : ''}${product.color ? `🎨 *Cor:* ${product.color}\n` : ''}💰 *Valor:* ${formatCurrency(product.sellingPrice)}\n\n_Entre em contato para garantir a sua peça exclusiva!_`;
     
     if (navigator.clipboard) {
       navigator.clipboard.writeText(text);
@@ -89,7 +90,7 @@ export const Catalog: React.FC<CatalogProps> = ({
             </h2>
           </div>
           <p className="text-xs sm:text-sm text-gray-500 mt-1">
-            Galeria visual de todas as peças cadastradas na Eternal Chique com valores de venda e estoque.
+            Galeria visual de todas as peças cadastradas na Eternal Chic com valores de venda e estoque.
           </p>
         </div>
 
@@ -187,6 +188,9 @@ export const Catalog: React.FC<CatalogProps> = ({
                     <img
                       src={product.photo}
                       alt={product.name}
+                      onError={(e) => {
+                        e.currentTarget.src = DEFAULT_PHOTO_PLACEHOLDER;
+                      }}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
 
@@ -327,6 +331,9 @@ export const Catalog: React.FC<CatalogProps> = ({
               <img 
                 src={selectedImageModal.photo} 
                 alt={selectedImageModal.name} 
+                onError={(e) => {
+                  e.currentTarget.src = DEFAULT_PHOTO_PLACEHOLDER;
+                }}
                 className="w-full h-full object-cover"
               />
               <button
@@ -347,7 +354,7 @@ export const Catalog: React.FC<CatalogProps> = ({
                 {selectedImageModal.name}
               </h3>
               <p className="text-xs text-gray-600">
-                {selectedImageModal.description || 'Peça exclusiva Eternal Chique.'}
+                {selectedImageModal.description || 'Peça exclusiva Eternal Chic.'}
               </p>
               <div className="pt-2 flex items-center justify-between border-t border-gray-100">
                 <span className="text-2xl font-serif-chic font-bold text-[#722F37]">

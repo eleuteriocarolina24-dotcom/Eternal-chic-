@@ -56,7 +56,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200 shadow-xs">
       {/* Top Brand Banner */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-col md:flex-row items-center justify-between gap-3">
-        {/* Brand identity: Eternal Chique in Wine with Butterfly Logo */}
+        {/* Brand identity: Eternal Chic in Wine with Butterfly Logo */}
         <div 
           onClick={() => setActiveTab('dashboard')}
           className="flex items-center gap-3.5 cursor-pointer group"
@@ -68,7 +68,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div>
             <div className="flex items-center gap-2">
               <h1 className="text-2xl sm:text-3xl font-serif-chic font-bold tracking-tight text-[#722F37] leading-none">
-                Eternal Chique
+                Eternal Chic
               </h1>
               <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-[#722F37]/10 text-[#722F37] border border-[#722F37]/20 tracking-wider uppercase">
                 Moda & Ateliê

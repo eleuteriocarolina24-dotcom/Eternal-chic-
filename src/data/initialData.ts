@@ -12,7 +12,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Vestidos',
     size: 'M',
     color: 'Vinho Marsala',
-    description: 'Vestido midi em crepe acetinado com caimento fluido, decote sutil em V e acabamento premium Eternal Chique.',
+    description: 'Vestido midi em crepe acetinado com caimento fluido, decote sutil em V e acabamento premium Eternal Chic.',
     createdAt: '2026-08-20T10:00:00.000Z'
   },
   {
@@ -163,7 +163,7 @@ export const INITIAL_TASKS: AgendaTask[] = [
   },
   {
     id: 'task-2',
-    title: 'Live Shop no Instagram Eternal Chique',
+    title: 'Live Shop no Instagram Eternal Chic',
     date: '2026-08-29',
     time: '19:00',
     description: 'Apresentar a coleção cápsula Marsala & Pérola com cupons de lançamento.',

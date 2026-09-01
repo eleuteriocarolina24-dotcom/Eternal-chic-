@@ -1,6 +1,6 @@
 {
-  "name": "Eternal Chique",
-  "description": "Sistema de gestão completo para a marca Eternal Chique com controle de estoque, catálogo, precificação, agenda e leitor de código.",
+  "name": "Eternal Chic",
+  "description": "Sistema de gestão completo para a marca Eternal Chic com controle de estoque, catálogo, precificação, agenda e leitor de código.",
   "requestFramePermissions": ["camera"],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

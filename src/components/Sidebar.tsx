@@ -99,7 +99,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         </div>
         <div>
           <h1 className="text-[#722F37] font-serif-chic font-bold text-xl tracking-tight leading-none">
-            Eternal Chique
+            Eternal Chic
           </h1>
           <p className="text-[11px] text-gray-400 font-sans mt-0.5 font-medium tracking-wide">
             Moda & Ateliê
